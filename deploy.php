@@ -7,7 +7,7 @@ require 'recipe/laravel.php';
 set('application', 'my_project');
 
 // Project repository
-set('repository', '');
+set('repository', 'git@github.com:aristidesneto/deploy-example.git');
 
 // [Optional] Allocate tty for git clone. Default value is false.
 set('git_tty', true); 
@@ -22,8 +22,9 @@ add('writable_dirs', []);
 
 // Hosts
 
-host('project.com')
-    ->set('deploy_path', '~/{{application}}');    
+host('usrc1_dep@206.189.193.189')
+    ->port('22345')
+    ->set('deploy_path', '/var/www/clients/client1/web13/web');    
     
 // Tasks
 
@@ -36,5 +37,5 @@ after('deploy:failed', 'deploy:unlock');
 
 // Migrate database before symlink new release.
 
-before('deploy:symlink', 'artisan:migrate');
+#before('deploy:symlink', 'artisan:migrate');
 
