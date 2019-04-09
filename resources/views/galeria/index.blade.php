@@ -26,6 +26,21 @@
                                 <img src="{{ asset('storage/images/img3.jpg') }}" alt="..." class="img-thumbnail img-reponsive">
                             </a>
                         </div>
+                        <div class="col-xs-6 col-md-4">
+                            <a href="#" class="thumbnail">
+                                <img src="{{ asset('storage/images/img2.jpg') }}" alt="..." class="img-thumbnail img-reponsive">
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <a href="#" class="thumbnail">
+                                <img src="{{ asset('storage/images/img3.jpg') }}" alt="..." class="img-thumbnail img-reponsive">
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <a href="#" class="thumbnail">
+                                <img src="{{ asset('storage/images/img1.jpg') }}" alt="..." class="img-thumbnail img-reponsive">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
