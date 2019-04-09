@@ -21,10 +21,9 @@ add('writable_dirs', []);
 
 
 // Hosts
-
 host('usrc1_dep@206.189.193.189')
     ->port('22345')
-    ->set('deploy_path', '/var/www/clients/client1/web13/web');    
+    ->set('deploy_path', '/var/www/clients/client1/web13/web');  
     
 // Tasks
 
@@ -36,6 +35,5 @@ task('build', function () {
 after('deploy:failed', 'deploy:unlock');
 
 // Migrate database before symlink new release.
-
-#before('deploy:symlink', 'artisan:migrate');
+// before('deploy:symlink', 'artisan:migrate');
 
